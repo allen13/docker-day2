@@ -122,8 +122,8 @@ run your container
 
 push your container to docker hub
 
-    docker push <github account name>/hello-go-docker:v0.1.0
+    docker push <github account name>/hello-docker:v0.1.0
 
 post your container name to the class image thread and then run someone eleses image
 
-    docker run -it --rm -p 8080:8080 <other github account name>/docker-day2:v0.1.0
+    docker run -it --rm -p 8080:8080 <other github account name>/hello-docker:v0.1.0
