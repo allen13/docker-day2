@@ -108,7 +108,7 @@ make a change in the `http hello response` section of the code to mark it as you
 
 build the docker image
 
-    docker build . -t <github account name>/hello-docker:v0.1.0
+    docker build . -t <dockerhub account name>/hello-docker:v0.1.0
     # run this to see your the image you built
     docker images
     # see the oci compliant image config
@@ -116,14 +116,14 @@ build the docker image
 
 run your container
 
-    docker run -it --rm -p 8080:8080 <github account name>/hello-docker:v0.1.0
+    docker run -it --rm -p 8080:8080 <dockerhub account name>/hello-docker:v0.1.0
     # navigate to your app. browser works too.
     curl localhost:8080
 
 push your container to docker hub
 
-    docker push <github account name>/hello-docker:v0.1.0
+    docker push <dockerhub account name>/hello-docker:v0.1.0
 
 post your container name to the class image thread and then run someone eleses image
 
-    docker run -it --rm -p 8080:8080 <other github account name>/hello-docker:v0.1.0
+    docker run -it --rm -p 8080:8080 <other dockerhub account name>/hello-docker:v0.1.0
