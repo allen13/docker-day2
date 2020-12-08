@@ -127,3 +127,25 @@ push your container to docker hub
 post your container name to the class image thread and then run someone eleses image
 
     docker run -it --rm -p 8080:8080 <other dockerhub account name>/hello-docker:v0.1.0
+
+docker 2 extra challenge
+------------------------
+
+Create a docker container that runs a database and a program that interact with each other without using a second container.
+
+This will require you to:
+* Pick a base image with package management built in
+* Install your database
+* Install the language dependecies for your program
+* Build the program if it is not a scripting language
+* Install an [init system](https://ahmet.im/blog/minimal-init-process-for-containers/) for a container
+* Find or write a program that can interact with your choice of database
+* Show proof that the program is interacting with the database
+
+Recommended Laguages:
+* Python
+* Golang
+
+Recommended Databases:
+* Redis
+* Postgres or MySQL
