@@ -102,6 +102,8 @@ build and share a container with the class
 
 clone this repository to your local machine. you may need to install git.
 
+    git clone https://github.com/allen13/docker-day2.git
+
 make a change in the `http hello response` section of the code to mark it as your own. This will differntiate the reponses from other classmates.
 
     fmt.Fprintf(w, "Hello from <me> %s!\n", target)
